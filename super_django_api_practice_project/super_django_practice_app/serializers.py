@@ -9,7 +9,7 @@ class VehicleSerializer(serializers.ModelSerializer):
 class CustomerSeralizer(serializers.ModelSerializer):
     class Meta:
         model = Customer
-        fields = ['id', 'name', 'bicycles_owned', 'tricycles_owned', 'unicycles_owned', 'mountain_bikes_owned', 'bmx_bikes_owned']
+        fields = ['id', 'vehicles_owned']
 
 class CustomerOrderSeralizer(serializers.ModelSerializer):
     class Meta:

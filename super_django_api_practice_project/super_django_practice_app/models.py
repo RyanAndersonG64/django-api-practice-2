@@ -12,6 +12,7 @@ class Vehicle(models.Model):
 
 class Customer(models.Model):
     name = models.TextField(max_length=100)
+    vehicles_owned = models.SmallIntegerField(default=0)
     bicycles_owned = models.SmallIntegerField(default=0)
     unicycles_owned = models.SmallIntegerField(default=0)
     tricycles_owned = models.SmallIntegerField(default=0)
